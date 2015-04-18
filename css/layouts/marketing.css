@@ -75,6 +75,7 @@ label {
     color: white;
     padding: 0.5em 2em;
     border-radius: 5px;
+    opacity: 0.6;
 }
 
 a.pure-button-primary {
@@ -136,8 +137,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    /*background: #1f8dd6;*/
-    background-image: url('http://cdn1.editmysite.com/uploads/1/2/3/1/12314617/background-images/291405063.jpg') !important;
+    background-image: url('../../img/common/coast-hazy.jpg') !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50% !important;
     background-size: cover !important;
@@ -147,7 +147,7 @@ a.pure-button-primary {
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 88%;
+    height: 100%;
     top: 0;
     left: 0;
     position: fixed !important;
@@ -159,14 +159,14 @@ a.pure-button-primary {
     height: 50%;
     margin: auto;
     position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
+    top: 25%; left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: none;
 }
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 20px;
+    font-size: 200%;
     font-weight: bold;
     color: white;
     /*border: 3px solid white;*/
@@ -178,7 +178,7 @@ a.pure-button-primary {
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
-    font-size: 20px;
+    font-size: 120%;
     color: white;
     letter-spacing: 0.05em;
     opacity: 0.8;
@@ -191,7 +191,7 @@ a.pure-button-primary {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 87%;
+    top: 100%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
