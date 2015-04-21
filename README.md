@@ -1,14 +1,12 @@
-Pure CSS Layout Examples
-========================
+linkgo.io
+=========
 
-Layout examples using [Pure CSS][pure] compiled from the [pure-site][] project.
-
-[pure]: http://purecss.io/
-[pure-site]: https://github.com/yahoo/pure-site
+The landing site of linkgo.io.
+github profile: https://github.com/linkgo
 
 
-License
--------
+License for Pure CSS
+--------------------
 
 This software is free to use under the Yahoo! Inc. BSD license.
 See the [LICENSE file][] for license text and copyright information.
