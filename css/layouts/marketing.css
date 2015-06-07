@@ -63,8 +63,7 @@ label {
     border: 2px solid #ddd;
     box-shadow: none;
     font-size: 100%;
-    width: 100%;
-    margin-bottom: 1em;
+    margin-right: 1em;
 }
 
 /*
@@ -86,6 +85,11 @@ a.pure-button-primary {
     color: #1f8dd6;
     border-radius: 5px;
     font-size: 120%;
+}
+
+a.pure-button-secondary {
+    font-family: 'PT Sans', Ubuntu, sans-serif;
+    border-radius: 5px;
 }
 
 
@@ -196,7 +200,6 @@ a.pure-button-primary {
     position: absolute;
     top: 100%;
     width: 100%;
-    min-height: 12%;
     z-index: 2;
     background: white;
 
