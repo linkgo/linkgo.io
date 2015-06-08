@@ -64,6 +64,7 @@ label {
     box-shadow: none;
     font-size: 100%;
     margin-right: 1em;
+    display: inline;
 }
 
 /*
