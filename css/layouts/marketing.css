@@ -12,7 +12,7 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 13px;
-    font-family: 'PT Sans', Ubuntu, sans-serif;
+    font-family: Quicksand, Ubuntu, sans-serif;
 }
 
 h1,
@@ -72,16 +72,16 @@ label {
  * I want my pure-button elements to look a little different
  */
 .pure-button {
-    font-family: 'PT Sans', Ubuntu, sans-serif;
+    font-family: Quicksand, Ubuntu, sans-serif;
     background-color: #1f8dd6;
     color: white;
     padding: 0.5em 2em;
     border-radius: 5px;
-    opacity: 0.6;
+    opacity: 0.618;
 }
 
 a.pure-button-primary {
-    font-family: 'PT Sans', Ubuntu, sans-serif;
+    font-family: Quicksand, Ubuntu, sans-serif;
     background: white;
     color: #1f8dd6;
     border-radius: 5px;
@@ -89,7 +89,7 @@ a.pure-button-primary {
 }
 
 a.pure-button-secondary {
-    font-family: 'PT Sans', Ubuntu, sans-serif;
+    font-family: Quicksand, Ubuntu, sans-serif;
     border-radius: 5px;
 }
 
@@ -106,7 +106,7 @@ a.pure-button-secondary {
 }
 .home-menu {
     background: #ffffff;
-	opacity: 0.8;
+	opacity: 0.618;
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -145,7 +145,7 @@ a.pure-button-secondary {
  */
 
 .splash-container {
-    background-image: url('../../img/common/coast-hazy.jpg') !important;
+    background-image: url('../../img/common/landing.jpg') !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50% !important;
     background-size: cover !important;
@@ -190,7 +190,7 @@ a.pure-button-secondary {
     font-size: 120%;
     color: white;
     letter-spacing: 0.05em;
-    opacity: 0.8;
+    opacity: 0.618;
 }
 
 /*
