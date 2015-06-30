@@ -9,7 +9,7 @@
  * Most of these are inherited from Base, but I want to change a few.
  */
 body {
-    line-height: 1.7em;
+    line-height: 1.5em;
     color: #7f8c8d;
     font-size: 13px;
     font-family: Quicksand, Ubuntu, sans-serif;
@@ -75,7 +75,7 @@ label {
     font-family: Quicksand, Ubuntu, sans-serif;
     background-color: #1f8dd6;
     color: white;
-    padding: 0.5em 2em;
+    padding: 0.5em 1.5em;
     border-radius: 5px;
     opacity: 0.618;
 }
@@ -85,7 +85,6 @@ a.pure-button-primary {
     background: white;
     color: #1f8dd6;
     border-radius: 5px;
-    font-size: 120%;
 }
 
 a.pure-button-secondary {
@@ -167,7 +166,7 @@ a.pure-button-secondary {
     height: 50%;
     margin: auto;
     position: absolute;
-    top: 25%; left: 0; bottom: 0; right: 0;
+    top: 5%; left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: none;
 }
@@ -178,20 +177,25 @@ a.pure-button-secondary {
     font-size: 200%;
     font-weight: bold;
     color: white;
-    /*border: 3px solid white;*/
-    padding: 0.2em 1.0em;
+    padding: 0em 1.0em;
     font-weight: 800;
     border-radius: 5px;
-    line-height: 1em;
+    line-height: 1.2em;
 }
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
     font-size: 120%;
     color: white;
-    letter-spacing: 0.05em;
     opacity: 0.618;
+    line-height: 1.2em;
 }
+
+/* This is the subheading that appears on the blue section */
+.splash-button{
+    line-height: 5em;
+}
+
 
 /*
  * -- CONTENT STYLES --
@@ -272,17 +276,8 @@ a.pure-button-secondary {
             float: left;
         }
 
-    /* We increase the height of the splash-container */
-/*    .splash-container {
-        height: 500px;
-    }*/
-
     /* We decrease the width of the .splash, since we have more width
     to work with */
-    .splash {
-        width: 50%;
-        height: 50%;
-    }
 
     .splash-head {
         font-size: 250%;
