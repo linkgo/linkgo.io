@@ -1,53 +1,66 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A layout example that shows off a responsive product landing page.">
+<meta name="description" content="Link to the world on the go with i/o capabilities.">
 
-    <title>linkgo.io - Link to the world on the go with i/o capabilities.</title>
-
-
-
+<title>linkgo.io - Link to the world on the go with i/o capabilities.</title>
 
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-
-
-
 <!--[if lte IE 8]>
-
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
 
 <![endif]-->
 <!--[if gt IE 8]><!-->
-
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
 <!--<![endif]-->
-
-
-
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
 <!-- Use 360 mirror for google fonts -->
-<link href='http://fonts.useso.com/css?family=Quicksand|PT+Sans|Ubuntu|Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.lug.ustc.edu.cn/css?family=Quicksand|PT+Sans|Ubuntu|Open+Sans' rel='stylesheet' type='text/css'>
 <!--link href='http://fonts.googleapis.com/css?family=Quicksand|PT+Sans|Ubuntu|Open+Sans' rel='stylesheet' type='text/css'-->
 
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/marketing.css">
-    <!--<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="css/layouts/marketing.css">
+<!--<![endif]-->
 
+<link rel="shortcut icon" type="image/ico" href="favicon.ico">
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+!window.jQuery && document.write('<script src=http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js><\/script>');
+</script>
 
+<script type="text/javascript">
+function subscribe()
+{
+	var e = document.getElementById("email").value;
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e)) {
+		$.ajax({
+			type: "POST",
+			url: "https://hooks.slack.com/services/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",
+			dataType: 'json',
+			data: JSON.stringify({
+				channel: '#mail-greetings',
+				username: 'Subscriber',
+				text: 'Hey, I like your product, keep me updated: ' + e,
+				icon_emoji: ':love_letter:'
+			}),
+		});
+		alert("Cheers!");
+		return true;
+	} else {
+		return false;
+	}
+}
+</script>
 
 </head>
 <body>
-
-
-
 
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
@@ -181,13 +194,12 @@
 
     </div>
 -->
-
     <div class="footer l-box is-center">
-        <form class="pure-form">
-        <fieldset>
-            <input type="email" placeholder="Email">
-            <a class="pure-button pure-button-secondary">Subscribe</a>
-        </fieldset>
+        <form style="line-height: 3em;" class="pure-form" action="#" method="get" onsubmit="return subscribe()">
+            <fieldset>
+                <input id="email" type="email" placeholder="Email">
+		<button type="submit" class="pure-button pure-button-secondary">Subscribe</button>
+            </fieldset>
         </form>
         Made with
         <a style="color:#A42027;">&hearts;</a>
@@ -196,9 +208,6 @@
         team.
     </div>
 </div>
-
-
-
 
 </body>
 </html>
